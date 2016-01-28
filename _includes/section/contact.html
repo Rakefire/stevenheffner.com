@@ -1,51 +1,49 @@
 <section class="padding-top-bottom" id="contact">
-<div class="container">
-<div class="row header">
-<div class="col-md-12">
-<h2>Contact me</h2>
-
-<p>If you would like to contact me, please fill out the form below</p>
-</div>
-</div>
-
-<div class="row">
-<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 contact-info">
-<div id="alert-contact">
-<div class="alert alert-success" role="alert"><strong>Your message has been sent.</strong>
-</div>
-</div>
-
-<form action="post" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
-<div class="row clearfix">
-<div class="col-xs-12 col-sm-6 col-md-6">
-<div class="form-group"><label class="control-label">Name</label>
-<div class="controls"><input class="form-control input-lg requiredField" data-error-empty="Enter name" name="contactName" placeholder="Your name" type="text">
-</div>
-</div>
-</div>
-
-<div class="col-xs-12 col-sm-6 col-md-6">
-<div class="form-group"><label class="control-label" for="contact-mail">Email</label> <input name="cc_emails[]" type="hidden" value=
-"wasserman.timothy@gmail.com">
-<div class=" controls"><input class="form-control input-lg requiredField" data-error-empty="Enter email" data-error-invalid="Invalid email address" name=
-"email" placeholder="Your email" type="email">
-</div></div>
-</div>
-</div>
-
-<div class="form-group"><label class="control-label" for="contact-message">Message</label>
-<div class="controls">
-<textarea class="form-control input-lg requiredField" data-error-empty="Enter message" name="comments" placeholder="Your message" rows="5">
+  <div class="container">
+    <div class="row header">
+      <div class="col-md-12">
+        <h2>Contact me</h2>
+        <p>If you would like to contact me, please fill out the form below</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 contact-info">
+        <div id="alert-contact">
+          <div class="alert alert-success" role="alert">
+            <strong>Your message has been sent.</strong>
+          </div>
+        </div>
+        <form action="/" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
+          <div class="row clearfix">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="form-group">
+                <label class="control-label">Name</label>
+                <div class="controls">
+                  <input class="form-control input-lg requiredField" data-error-empty="Enter name" name="contactName" placeholder="Your name" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="form-group">
+                <label class="control-label" for="contact-mail">Email</label>
+                <div class=" controls">
+                  <input class="form-control input-lg requiredField" data-error-empty="Enter email" data-error-invalid="Invalid email address" name="email" placeholder="Your email" type="email">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="contact-message">Message</label>
+            <div class="controls">
+              <textarea class="form-control input-lg requiredField" data-error-empty="Enter message" name="comments" placeholder="Your message" rows="5">
 </textarea>
-</div>
-</div>
-
-<p><button class="btn btn-store btn-block" data-error-message="Error!" data-ok-message="Email Sent" data-sending-message="Sending..." name="submit" type=
-"submit">Send Message</button>
-</p>
-<input id="submitted3" name="submitted" type="hidden" value="true">
-</form>
-</div>
-</div>
-</div>
+            </div>
+          </div>
+          <input name="cc_emails[]" type="hidden" value="wasserman.timothy@gmail.com">
+          <input name="cc_emails[]" type="hidden" value="ricky@rakefire.io">
+          <p><button class="btn btn-store btn-block" data-error-message="Error!" data-ok-message="Email Sent" data-sending-message="Sending..." name="submit" type="submit">Send Message</button></p><input id="submitted3" name="submitted" type="hidden" value="true">
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
