@@ -336,7 +336,7 @@ section {
     opacity: .6;
     background-color: #000;
 }
-
+/*
 .bg-image-2 {
 	 background: transparent url(../img/mockup5.png)  no-repeat center center;
 	 background-size: cover;
@@ -760,7 +760,7 @@ header a{
   position: relative;
 }
 
- .hero .inner{
+.hero .inner{
   background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
 
 
