@@ -1,9 +1,10 @@
-<section class=" padding-top-bottom" id="contact">
+<!-- 
+><section class=" padding-top-bottom" id="contact">
   <div class="container">
     <div class="row header">
       <div class="col-md-12">
         <h2>Contact me</h2>
-        <p>For any questions fill in the form below & we'll get back to you ASAP!</p>
+        <p>If you would like to contact me, please fill out the form below</p>
       </div>
     </div>
     <div class="row">
@@ -13,7 +14,8 @@
             <strong>Your message has been sent.</strong>
           </div>
         </div>
-        <form action="sendemail.php" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
+        
+		<form action="sendemail.php" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
           <div class="row clearfix">
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="form-group">
@@ -44,5 +46,13 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<form method="post" action="/success.html">
+  <label>First Name</label><input type="text" name="first_name" />
+  <label>Surname</label><input type="text" name="surname" />
+  <label>Message</label><textarea name="message"></textarea>
   <input type="hidden" name="cc_emails[]" value="wasserman.timothy@gmail.com" />
-</section>
+
+  <input type="submit" value="Send Message" />
+</form>
