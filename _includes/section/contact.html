@@ -7,7 +7,7 @@
         <p>If you would like to contact me, please fill out the form below</p>
       </div>
     </div>
-<!--
+
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2 contact-info">
         <div id="alert-contact">
@@ -16,7 +16,7 @@
           </div>
         </div>
         
-		<form action="sendemail.php" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
+		<form action="post" class="myform" id="contact-form" method="post" name="contact-form" novalidate="">
           <div class="row clearfix">
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="form-group">
@@ -29,6 +29,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="form-group">
                 <label class="control-label" for="contact-mail">Email</label>
+	<input type="hidden" name="cc_emails[]" value="wasserman.timothy@gmail.com" />
                 <div class=" controls">
                   <input class="form-control input-lg requiredField" data-error-empty="Enter email" data-error-invalid="Invalid email address" name="email" placeholder="Your email" type="email">
                 </div>
@@ -47,7 +48,7 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <form method="post" action="/success.html">
   <label>Name</label><input type="text" name="first_name" />
