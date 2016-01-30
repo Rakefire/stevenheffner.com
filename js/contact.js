@@ -57,7 +57,7 @@ $(document).ready(function() {
 			.fail(function(data) {
         console.log("Unknown error")
         console.log(data);
-				$('#contact-form button').html('Save error');
+				$('#contact-form button').html('Save error. Please try again.');
     			setTimeout(function(){
 					$('#contact-form button').html(buttonCopy);
 				},4000);
