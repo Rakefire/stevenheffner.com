@@ -17,3 +17,12 @@ url: "http://stevenheffner.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - bin/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+collections:
+  - videos
