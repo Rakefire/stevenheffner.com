@@ -1,23 +1,18 @@
-<section class="" id="showcase">
+<section class="" id="performer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 slider">
-        <div class="owl-carousel" data-autoplay="4000" data-dots="true" data-navigation="false" data-transition="" id="as-slider">
+        <div class="owl-carousel" id="performance-videos">
+          {% for video in site.videos %}
+            <div class="item-video" data-description="{{video.content}}"><a class="owl-video" href="{{video.link}}"></a></div>
+          {% endfor %}
         </div>
       </div>
+
       <div class="col-sm-6 bg-shop" style="height:500px;">
         <div class="half-box-right">
           <div class="center-vertical">
-            <div class="center-vertical-box">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
+            <div id="performer-video-description"class="center-vertical-box">
             </div>
           </div>
         </div>

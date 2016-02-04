@@ -2,46 +2,30 @@
 =            Slider            =
 ==============================*/
 
-var win = $(window),
-	pxContainer = $('#as-slider');
-	loaderIntro = '<div class="landing"><div class="spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>';
-
 /* Initialize Intro */
-function initSlider() {
-	var $this = pxContainer;
-	$this.after(loaderIntro);
-	$this.addClass(function () {
-		return $this.find('.item').length > 1 ? "loaded" : "";
-	});
+function updateDescription(){
+  var description    = $("#performance-videos").find(".active .item-video").first().data("description")
+  var descriptionBox = $("#performer-video-description");
 
-	$this.waitForImages({
-		finished: function () {
-			// sleep(3000)
-			$('.landing').remove();
-			if ($this.hasClass('loaded')) {
-				var autoplay = $this.data('autoplay'),
-					navigation = $this.data('navigation'),
-					dots = $this.data('dots'),
-					transition = $this.data('transition');
-
-				$this.owlCarousel({
-				    items : 1, 
-					loop: true,
-					autoplayTimeout: autoplay || false,
-					dots: dots || false,
-					nav: navigation || false,
-					navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-				    autoplay: true,
-				    responsive: true,
-					animateOut: transition || false
-				});
-			}
-		},
-		waitForAll: true
-	});
-
+  descriptionBox.fadeOut('slow', function(){
+    descriptionBox.html(description);
+    descriptionBox.fadeIn('slow')
+  })
 }
-if (pxContainer.length) {
-	initSlider();
-}
+
+$('.owl-carousel').owlCarousel({
+  items: 1,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  dots: true,
+  nav:  false,
+  navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+  responsive: true,
+  animateOut: false,
+  video: true,
+  center: true,
+  lazyLoad: true,
+}).on('changed.owl.carousel', updateDescription);
+
 /*-----  End of Slider  ------*/
