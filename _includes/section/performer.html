@@ -2,9 +2,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6 slider">
-        <div class="owl-carousel" id="performance-videos">
+        <div class="owl-carousel embed-responsive" id="performance-videos">
           {% for video in site.videos %}
-            <div class="item-video" data-description="{{video.content}}"><a class="owl-video" href="{{video.link}}"></a></div>
+            <div class="item-video embed-responsive-item" data-description="{{video.content | xml_escape}}"><a class="owl-video" href="{{video.link}}"></a></div>
           {% endfor %}
         </div>
       </div>

@@ -6,6 +6,6 @@ image:
 tags: ["collaborator"]
 ---
 
-In Athens, Ohio I was fortunate enough to encounter a saxophonist by the name of Matt James. Not only did we share a friendship over our mutual love of music, education, and quality beverages, but we were fortunate enough to perform and record together. Matt James released his debut album ͞Opening Lines͟ in 2014 with personnel including: Matt James, Sean Parsons, Guy Remonko, Steven Heffner, Terry Douds, and Rob Parton. Here’s a link to his CDBaby page!
+In Athens, Ohio I was fortunate enough to encounter a saxophonist by the name of Matt James. Not only did we share a friendship over our mutual love of music, education, and quality beverages, but we were fortunate enough to perform and record together. Matt James released his debut album Opening Lines in 2014 with personnel including: Matt James, Sean Parsons, Guy Remonko, Steven Heffner, Terry Douds, and Rob Parton.
 
-http://www.cdbaby.com/cd/mattjames32
+[Matt James - Opening Lines](http://www.cdbaby.com/cd/mattjames32) on cdbaby
