@@ -1,6 +1,6 @@
 ---
 title: Opening Lines
-link: https://www.youtube.com/watch?v=-xRUWy-A5_0
+link: https://www.youtube.com/embed/-xRUWy-A5_0
 performers: Steven Heffner, Matt James
 image:
 tags: ["collaborator"]

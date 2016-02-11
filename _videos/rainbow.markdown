@@ -1,6 +1,6 @@
 ---
 title: Somewhere Over The Rainbow
-link: https://www.youtube.com/watch?v=t2nRIlmhZWw
+link: https://www.youtube.com/embed/t2nRIlmhZWw
 performers: Steven Heffner, Oliva Brownlee
 image: "../img/oliviapicture2.jpg"
 tags: ["collaborator"]
