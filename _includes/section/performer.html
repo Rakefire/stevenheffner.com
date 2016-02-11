@@ -4,7 +4,10 @@
       <div class="col-sm-6 slider">
         <div class="owl-carousel embed-responsive" id="performance-videos">
           {% for video in site.videos %}
-            <div class="item-video embed-responsive-item" data-description="{{video.content | xml_escape}}"><a class="owl-video" href="{{video.link}}"></a></div>
+            {% if video.tags contains "performer" %}
+              {{ video.tags }}
+              <div class="item-video embed-responsive-item" data-description="{{video.content | xml_escape}}"><a class="owl-video" href="{{video.link}}"></a></div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
