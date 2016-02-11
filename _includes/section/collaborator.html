@@ -2,8 +2,11 @@
   <div class="inner">
     <div class="copy">
       <h1>Collaborator</h1><br>
-      <iframe allowfullscreen="" frameborder="0" height="432" src="https://www.youtube.com/embed/GNcAAvGNbqE" width="768"></iframe><br>
-      <p>*Some info about the video will go here*</p>
+      {% for video in site.videos %}
+        {% if video.tags contains "collaborator" %}
+	    <div class="item-video embed-responsive-item" data-description="{{video.content | xml_escape}}"><a class="owl-video" href="{{video.link}}"></a></div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
