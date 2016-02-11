@@ -24,5 +24,8 @@ exclude:
   - Gemfile.lock
   - README.md
 
+gems:
+  - jekyll-redirect-from
+
 collections:
   - videos
