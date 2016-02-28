@@ -1,9 +1,7 @@
 <section class="hero" id="collaborator">
   <div class="container-fluid">
-		<h1>Collaborator</h1>
-		<br><br>
-		
-		  {% for video in site.videos %}
+	  <br>
+		{% for video in site.videos %}
           {% if video.tags contains "collaborator" %}
 		     <div class="row">
 		   <div class="col-sm-6">
@@ -11,7 +9,7 @@
                <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
 		   </div>
 	   </div>
-      <div class="col-sm-6" style="height:500px;">
+      <div class="col-sm-6" style="height:450px;">
         <div class="half-box-right">
           <div class="center-vertical">
 			  <h1> {{video.artist}}</h1>
@@ -20,33 +18,7 @@
           </div>
         </div>
 	</div>
-   <br>
 	  	{% endif %}
         {% endfor %}
 	</div>
 </section>
-
-<!-- <section class="hero" id="collaborator">
-  <div class="inner">
-    <div class="copy">
-      <div class="col-md-8 col-md-offset-2">
-        <h1>Collaborator</h1>
-
-        {% for video in site.videos %}
-          {% if video.tags contains "collaborator" %}
-
-            <div class="row text-center">
-              {{ video.content }}
-
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
-              </div>
-            </div>
-
-          {% endif %}
-        {% endfor %}
-
-      </div>
-    </div>
-  </div>
-</section> -->
