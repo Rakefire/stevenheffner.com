@@ -1,5 +1,37 @@
 <section class="hero" id="collaborator">
   <div class="inner">
+    <div class="row">
+		<br>
+		 <h1>Collaborator</h1>
+		 <br>
+      <div class="col-sm-6">
+		  {% for video in site.videos %}
+          {% if video.tags contains "collaborator" %}
+
+              <div class="embed-responsive embed-responsive-16by9">
+               <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
+          </div>
+	  </div>
+		  <div class="col-sm-6">
+               {{ video.content }}
+			  </div>
+            </div>
+			<br>
+			<br>
+			
+		 <div class="col-sm-6">
+			
+
+          {% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="hero" id="collaborator">
+  <div class="inner">
     <div class="copy">
       <div class="col-md-8 col-md-offset-2">
         <h1>Collaborator</h1>
@@ -21,4 +53,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
