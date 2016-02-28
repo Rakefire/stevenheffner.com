@@ -1,24 +1,27 @@
 <section class="hero" id="collaborator">
-  <div class="inner filter">
-    <div class="row">
-		<br>
-		 <h1>Collaborator</h1>
-		 <br>
+  <div class="container-fluid">
+		<h1>Collaborator</h1>
+		<br><br>
+		
 		  {% for video in site.videos %}
           {% if video.tags contains "collaborator" %}
+		     <div class="row">
 		   <div class="col-sm-6">
               <div class="embed-responsive embed-responsive-16by9">
                <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
 		   </div>
 	   </div>
-		  <div class="col-sm-6" class="center-vertical-box">
+	   <div class="col-sm-6">
+		   <div class="center-vertical">
+			   <div class="center-vertical-box">
                {{ video.content }}
-		   </div>
+		   		</div>
+			</div>
 	   </div>
-	   <br>
-	  {% endif %}
+   </div>
+   <br>
+	  	 {% endif %}
         {% endfor %}
-	</div>
 	</div>
 </section>
 
