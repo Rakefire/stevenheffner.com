@@ -1,5 +1,6 @@
 ---
 title: Opening Lines
+artist: Matt James
 link: https://www.youtube.com/embed/-xRUWy-A5_0
 performers: Steven Heffner, Matt James
 image:

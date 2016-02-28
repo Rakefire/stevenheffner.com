@@ -11,16 +11,17 @@
                <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
 		   </div>
 	   </div>
-	   <div class="col-sm-6">
-		   <div class="center-vertical">
-			   <div class="center-vertical-box">
-               {{ video.content }}
-		   		</div>
-			</div>
-	   </div>
-   </div>
+      <div class="col-sm-6" style="height:500px;">
+        <div class="half-box-right">
+          <div class="center-vertical">
+			  <h1> {{video.artist}}</h1>
+            {{ video.content }}
+            </div>
+          </div>
+        </div>
+	</div>
    <br>
-	  	 {% endif %}
+	  	{% endif %}
         {% endfor %}
 	</div>
 </section>

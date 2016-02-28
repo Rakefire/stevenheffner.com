@@ -1,5 +1,6 @@
 ---
 title: Somewhere Over The Rainbow
+artist: Jessica Baldwin
 link: https://www.youtube.com/embed/t2nRIlmhZWw
 performers: Steven Heffner, Jessica Baldwin
 image:
