@@ -1,0 +1,7 @@
+<div class="embed-responsive embed-responsive-16by9">
+ {% if include.video.link %}
+   <iframe class="embed-responsive-item" src="{{ include.video.link }}"></iframe>
+ {% else %}
+	 <img src="{{ include.video.image_link }}" />
+ {% endif %}
+</div>

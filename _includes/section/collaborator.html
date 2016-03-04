@@ -1,26 +1,25 @@
 <section class="hero" id="collaborator">
   <div class="container-fluid">
-	  <br>
+	<br>
   	{% for video in site.videos %}
       {% if video.tags contains "collaborator" %}
+		 {% capture content_location %}{% cycle 'video-left', 'video-right' %}{% endcapture %}
+		 
   	     <div class="row">
       	   <div class="col-sm-6">
-               <div class="embed-responsive embed-responsive-16by9">
-                 {% if video.link %}
-                   <iframe class="embed-responsive-item" src="{{ video.link }}"></iframe>
-                 {% else %}
-                 <img src="{{ video.image_link }}" />
-                 {% endif %}
-              </div>
+			  {% if content_location == 'video-left' %}
+				{% include collaborator/video_content.html video=video %}
+			  {% else %}
+				{% include collaborator/text_content.html video=video %}
+			  {% endif %}
       	   </div>
 
-          <div class="col-sm-6" style="height:450px;">
-            <div class="half-box-right">
-              <div class="center-vertical">
-                <h1> {{video.artist}}</h1>
-                {{ video.content }}
-              </div>
-            </div>
+          <div class="col-sm-6">
+			  {% if content_location == 'video-left' %}
+				{% include collaborator/text_content.html video=video %}
+			  {% else %}
+				{% include collaborator/video_content.html video=video %}
+			  {% endif %}
           </div>
       </div>
     {% endif %}
