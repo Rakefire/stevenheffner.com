@@ -126,31 +126,6 @@ blockquote, .blockquote-reverse {
   }
 }
 
-/*
-@media (max-width: 992px) {
-  body {
-  }
-  .text-left,
-  .text-right {
-    text-align: center;
-  }
-  .row [class^=col-] {
-    padding-bottom: 40px;
-  }
-  .row.no-dev [class^=col-],
-  .row [class^=col-sm-] {
-    padding-bottom: 0px;
-  }
-  .row [class^=col-]:last-child {
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 767px) {
-  .row [class^=col-sm-] {
-	padding-bottom: 40px;
-  }
-}
-*/
 
 /*================================
 =            Half box            =
@@ -561,7 +536,7 @@ section {
 
 .btn {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   padding: 0 35px;
   line-height: 46px;
@@ -827,7 +802,7 @@ h1 {
 
 p {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0px 20px;
 }
 
@@ -835,6 +810,12 @@ p {
 #collaborator {
  .row {
    padding-top: 3em;
- } 
-  
+ }
+
+}
+
+#contact {
+  .header {
+    color: black;
+  }
 }
