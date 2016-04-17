@@ -733,8 +733,9 @@ header {
   background-position: center center;
   background-attachment: fixed;
 
-  .inner {
-    min-height: 700px;
+  .explanation {
+    padding-top: 4em;
+    padding-bottom: 2em;
   }
 }
 
@@ -743,18 +744,6 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-
-  .inner {
-    min-height: 1900px;
-  }
-
-  .copy {
-    position: absolute;
-    top: 20%;
-    height: 10em;
-    margin-top: -18em;
-    width: 100%;
-  }
 }
 
 #educator {
@@ -762,6 +751,10 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+
+  .explanation {
+    padding-top: 4em;
+  }
 }
 
 .hero, .content {
@@ -771,7 +764,8 @@ header {
 }
 
 .inner {
-  min-height: 600px;
+  min-height: 500px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -780,10 +774,7 @@ header {
 }
 
 .copy {
-  position: absolute;
-  top: 20%;
-  height: 10em;
-  margin-top: -5em;
+  padding-top: 2em;
   width: 100%;
 }
 
